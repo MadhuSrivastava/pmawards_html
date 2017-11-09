@@ -80,7 +80,6 @@ hr {
   /*banner css*/
   .tab-content{
     display: none;
-    height:50vh;
 }
 
 .tab-content.current{
@@ -95,19 +94,23 @@ hr {
     min-height:50vh;
     max-height: 100vh;
     margin-bottom: 1%;
-  
 }
 
+@media(max-width:1800px){
+    .banner-img{
+        min-height:70vh;
+      
+    }
+}
 @media(max-width:1600px){
     .banner-img{
-        min-height:65vh;
+        min-height: 75vh;
       
     }
 }
 @media(max-width:768px){
     .banner-img{
         min-height:100vh;
-      
     }
 }
 
@@ -136,10 +139,13 @@ hr {
       text-transform: capitalize;
       font-weight:500;
       margin-left: 20px;
-
   }
+  .read-more:hover{
+    color: #fff;
+
+}
   .main-info-section{
-      background: 	rgba(41, 104, 143, 0.7);
+     background: 	rgba(21, 40, 56, 0.2);
       margin-left: 2%;
       margin-right: 2%;
       margin-top: 1%;
@@ -156,9 +162,14 @@ hr {
 .btn-cus{
 border-radius:6px;
 margin-bottom: 2%;
+line-height:1;
+height: 70px;
+padding: 8px 0px 0px 0px;
 font-size: 1em;
+word-wrap: break-word !important;
+white-space: normal !important;
 border:0px;
-background-image: -webkit-linear-gradient(top, #5590C1, #005399);
+background-image: -webkit-linear-gradient(top, #005299, #005399);
 }
 .btn-cus-1{
     font-size: 1em;
@@ -297,9 +308,7 @@ margin-top:5%;
   }
 
 @media(max-width:1366px){
-    .footer-icon-images{
-        margin-top: 16%;
-    }
+  
   
     .logo-dep a {
         display: inline-block;
@@ -417,6 +426,9 @@ margin-top:5%;
     }
     }
     .icon{
-        font-size:30px !important;
+        font-size:25px !important;
     }
-    
+    .icon-name{
+        font-size:1em;
+        padding-top:5%;
+    }
